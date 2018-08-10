@@ -1,0 +1,52 @@
+.container{
+    background-color: black;
+    color: white;
+    height: 100%
+}
+body{
+    background-color: dimgrey;
+}
+
+#buttonFirst{
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#submitButton{
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+label{
+    color: white;
+    font-size: 17px;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+}
+td{
+    width: 30%;
+}
+
+#count{
+    font-size: 20px;
+    color: green;
+}

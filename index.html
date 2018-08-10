@@ -1,0 +1,160 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"> </script>
+</head>
+
+<body>
+<div class="container">
+<div id="front-page">
+    <center><h1>Video Game Trivia! </h1>
+        <h2>Lets see how much you know</h2>
+        <button id="buttonFirst" onclick="nextPage()"> Start Trivia</button></p>
+    </center>
+    <p><img src="assets/images/pacman.png" style="width: 100%">
+</div>
+<div id="second-page" style="display: none;">
+    <h1 class="quizHeader">Video Games Quiz</h1>
+<div id="count"></div>
+    <table>
+    <tr>
+        <td>
+            <div>
+                <p class="question">1. Who was Mario always saving?</p>
+                <ul>
+                    <input class="answer" type="radio" name="q1" value="1">
+                    <label id="correctString1">Princess Peach</label>
+                    <br>
+                    <input class="answer" type="radio" name="q1" value="0">
+                    <label>Bowser</label>
+                    <br>
+                    <input class="answer" type="radio" name="q1" value="0">
+                    <label>Luigi</label>
+                    <br>
+                    <input class="answer" type="radio" name="q1" value="0">
+                    <label>Daisy</label>
+                </ul>
+            </div>
+        </td>
+        <td>
+            <div>
+                <p class="question">2. What does Mario jump on after completing level?</p>
+
+                <ul>
+                    <input class="answer" type="radio" name="q2" value="0">
+                    <label>Koopa</label>
+                    <br>
+                    <input class="answer" type="radio" name="q2" value="1">
+                    <label id="correctString2">Flag Pole</label>
+                    <br>
+                    <input class="answer" type="radio" name="q2" value="0">
+                    <label>Mushrooms</label>
+                    <br>
+                    <input class="answer" type="radio" name="q2" value="0">
+                    <label>Stars</label>
+                </ul>
+            </div>
+        </td>
+        <td>
+            <div>
+                <p class="question">3. What year was the Playstation 4 released?</p>
+
+                <ul>
+                    <input class="answer" type="radio" name="q3" value="0">
+                    <label>2005</label>
+                    <br>
+                    <input class="answer" type="radio" name="q3" value="1">
+                    <label id="correctString3">2013</label>
+                    <br>
+                    <input class="answer" type="radio" name="q3" value="0">
+                    <label>2008</label>
+                    <br>
+                    <input class="answer" type="radio" name="q3" value="0">
+                    <label>2016</label>
+                </ul>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div>
+                <p class="question">4. Which Call of Duty first had zombies? </p>
+
+                <ul>
+                    <input class="answer" type="radio" name="q4" value="0">
+                    <label>Advanced Warfare</label>
+                    <br>
+                    <input class="answer" type="radio" name="q4" value="0">
+                    <label>Modern Warfare 2</label>
+                    <br>
+                    <input class="answer" type="radio" name="q4" value="0">
+                    <label>Black Ops 2</label>
+                    <br>
+                    <input class="answer" type="radio" name="q4" value="1">
+                    <label id="correctString4">World at War</label>
+                </ul>
+            </div>
+        </td>
+        <td>
+            <div>
+                <p class="question">5. Which of these is not a Nintendo console?</p>
+
+                <ul>
+                    <input class="answer" type="radio" name="q5" value="0">
+                    <label>Wii</label>
+                    <br>
+                    <input class="answer" type="radio" name="q5" value="0">
+                    <label>Switch</label>
+                    <br>
+                    <input class="answer" type="radio" name="q5" value="1">
+                    <label id="correctString5">Xbox</label>
+                    <br>
+                    <input class="answer" type="radio" name="q5" value="0">
+                    <label>Super Nintendo</label>
+                </ul>
+            </div>
+        </td>
+        <td>
+            <div>
+                <p class="question">6. What is the name of Mario's trusty sidekick?</p>
+
+                <ul>
+                    <input class="answer" type="radio" name="q6" value="0">
+                    <label>Donkey Kong</label>
+                    <br>
+                    <input class="answer" type="radio" name="q6" value="1">
+                    <label id="correctString6">Yoshi</label>
+                    <br>
+                    <input class="answer" type="radio" name="q6" value="0">
+                    <label>Gumba</label>
+                    <br>
+                    <input class="answer" type="radio" name="q6" value="0">
+                    <label>Bowser</label>
+                </ul>
+            </div>
+        </td>
+    </tr>
+</table>
+<br/>
+    <center><input class="quizSubmit" id="submitButton" onClick="submitQuiz()" type="submit" value="Submit" /></center>
+
+<div>
+    <h2 class="quizScore" id="userScore"></h2>
+</div>
+</div>
+</div>
+</body>
+
+<script>
+
+</script>
+
+
+</html>
